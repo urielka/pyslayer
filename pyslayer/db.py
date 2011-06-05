@@ -50,6 +50,7 @@ class DbWorker(Thread):
         while cur.nextset():
           res.append((cur.description,cur.fetchall() if cur.description else cur.rowcount))
         cmd.res = res
+        self.connection.commit()
       except self.dbmodule.Error,e:
         cmd.exc = e
         cmd.res = res

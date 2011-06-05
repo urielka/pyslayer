@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(name='pyslayer',
-      version='0.1',
+      version='0.1.2',
       packages=['pyslayer'],
       scripts=['scripts/pyslayer'],
-      install_requires = ['MySQLdb'],
+      install_requires = [],
       extras_require = {'process title': ["setproctitle"],'daemonize':["python-daemon"]},
       author = "Uriel Katz",
       author_email = "uriel.katz@gmail.com",
