@@ -1,0 +1,6 @@
+README
+setup.py
+pyslayer/__init__.py
+pyslayer/db.py
+pyslayer/stats.py
+pyslayer/main.py
