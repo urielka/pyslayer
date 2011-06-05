@@ -3,6 +3,7 @@ from setuptools import setup
 setup(name='pyslayer',
       version='0.1',
       packages=['pyslayer'],
+      scripts=['scripts/pyslayer'],
       install_requires = ['MySQLdb'],
       extras_require = {'process title': ["setproctitle"],'daemonize':["python-daemon"]},
       author = "Uriel Katz",
