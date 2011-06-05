@@ -61,7 +61,7 @@ def setprocname(name):
   except:
     pass
 
-if __name__ == "__main__":
+def cli_start():
   setprocname("pyslayer")
   parser = OptionParser(usage="usage: %prog [options]")
   parser.add_option("-d", "--daemon", dest="daemon",help="ruan as daemon",action="store_true",default=False)
@@ -96,3 +96,7 @@ if __name__ == "__main__":
     logger.setLevel(logging.DEBUG)
     logger.addHandler(ch)
     main(options)
+
+if __name__ == "__main__":
+  cli_start()
+  
