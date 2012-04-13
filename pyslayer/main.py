@@ -65,7 +65,7 @@ def cli_start():
   setprocname("pyslayer")
   parser = OptionParser(usage="usage: %prog [options]")
   parser.add_option("-d", "--daemon", dest="daemon",help="ruan as daemon",action="store_true",default=False)
-  parser.add_option("-p", "--port", dest="port",help="listen port",action="store_int",default=9090)
+  parser.add_option("-p", "--port", dest="port",help="listen port",action="store_int",default=9090, type="int")
   parser.add_option("-i", "--ip-address", dest="listen",help="listen ip",default='0.0.0.0')
   parser.add_option("-l", "--log", dest="log",help="log path",default=path.expanduser('~/pyslayer.log'))
   parser.add_option("-t", "--number-threads", dest="num_threads",help="number of threads",action="store_int",default=10)
